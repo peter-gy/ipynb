@@ -20,7 +20,7 @@ class FullLoader(SourceFileLoader):
     It picks out all the code from a .ipynb file and executes it
     into the module.
 
-    If it isn't an .ipnb file, it's treated the same as a .py file
+    If it isn't an .ipynb file, it's treated the same as a .py file
     """
     def get_code(self, fullname):
         if self.path.endswith('.ipynb'):
